@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GB Tours & Travel | Explore Northern Pakistan</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f5f7fa;scroll-behavior:smooth;}
+.navbar{background:#0b5d3b;}
+.navbar-brand{font-size:28px;font-weight:bold;color:#fff!important;}
+.nav-link{color:#fff!important;font-weight:500;margin-left:15px;}
+.nav-link:hover{color:#ff9800!important;}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url("images/bg-herosection.avif");background-size:cover;background-position:center;display:flex;justify-content:center;align-items:center;text-align:center;color:white;padding-top:70px;}
+.hero h1{font-size:65px;font-weight:bold;}
+.hero p{font-size:22px;margin-top:20px;}
+.btn-main{background:#ff9800;padding:15px 35px;border:none;color:white;font-weight:bold;border-radius:40px;margin-top:30px;transition:.4s;text-decoration:none;display:inline-block;}
+.btn-main:hover{background:#0b5d3b;color:#fff;}
+.section-title{text-align:center;font-size:40px;font-weight:bold;margin-bottom:50px;color:#0b5d3b;}
+.card{border:none;border-radius:20px;overflow:hidden;transition:.4s;box-shadow:0 5px 15px rgba(0,0,0,.1);}
+.card:hover{transform:translateY(-10px);}
+.card img{height:250px;object-fit:cover;}
+section{padding:80px 0;}
+.services{background:#fff;}
+.service-box{background:white;padding:30px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.1);transition:.4s;text-align:center;height:100%;}
+.service-box:hover{background:#0b5d3b;color:white;}
+.service-box i{font-size:50px;margin-bottom:20px;color:#ff9800;}
+.service-box:hover i{color:#fff;}
+.about-content{background:#fff;padding:40px;border-radius:20px;box-shadow:0 5px 20px rgba(0,0,0,.1);}
+.about-content h3{color:#0b5d3b;margin-bottom:20px;}
+.tour-list li{margin-bottom:8px;}
+.price-tag{background:#ff9800;color:#fff;padding:5px 15px;border-radius:20px;font-weight:600;display:inline-block;margin-top:10px;}
+
+/* POPULAR SPOTS */
+.spots-section{background:#fff;}
+.spot-region{margin-bottom:40px;}
+.spot-region h4{color:#0b5d3b;font-size:22px;margin-bottom:15px;border-left:4px solid #ff9800;padding-left:12px;font-weight:600;}
+.spot-tags{display:flex;flex-wrap:wrap;gap:10px;}
+.spot-tag{background:#e8f5e9;color:#0b5d3b;padding:8px 16px;border-radius:25px;font-weight:500;font-size:14px;border:1px solid #c8e6c9;transition:.3s;}
+.spot-tag:hover{background:#0b5d3b;color:#fff;transform:translateY(-2px);}
+
+/* GALLERY */
+.gallery-item{position:relative;overflow:hidden;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.1);}
+.gallery-item img{width:100%;height:250px;object-fit:cover;transition:.4s;}
+.gallery-item:hover img{transform:scale(1.1);}
+.gallery-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent, rgba(0,0,0,.8));color:#fff;padding:15px 10px;font-weight:600;text-align:center;}
+
+/* FLEET */
+.vehicle-card{text-align:center;background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.1);height:100%;}
+.vehicle-card img{width:100%;height:200px;object-fit:cover;border-radius:10px;margin-bottom:15px;}
+
+footer{background:#0b5d3b;color:white;padding:40px 0;}
+.social-icons a{color:white;font-size:24px;margin:0 10px;transition:.3s;}
+.social-icons a:hover{color:#ff9800;}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;width:60px;height:60px;display:flex;justify-content:center;align-items:center;border-radius:50%;color:white;font-size:30px;text-decoration:none;z-index:1000;box-shadow:0 4px 10px rgba(0,0,0,.3);}
+@media(max-width:768px){.hero h1{font-size:38px;}.hero p{font-size:18px;}}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#home">GB Tours & Travel</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+<li class="nav-item"><a class="nav-link" href="#spots">Popular Spots</a></li>
+<li class="nav-item"><a class="nav-link" href="#fleet">Fleet</a></li>
+<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="container">
+<h1>Explore the Beauty of Northern Pakistan</h1>
+<p>Travel with GB Tours & Travel and discover Skardu, Hunza, Fairy Meadows, Deosai, Basho Valley and much more.</p>
+<a href="#packages" class="btn btn-main">Book Your Tour</a>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+<div class="container">
+<h2 class="section-title">Why Choose Us</h2>
+<div class="row g-4">
+<div class="col-md-3"><div class="service-box"><i class="fas fa-map-marked-alt"></i><h4>Professional Guides</h4><p>Experienced local guides for every tour.</p></div></div>
+<div class="col-md-3"><div class="service-box"><i class="fas fa-hotel"></i><h4>Best Hotels</h4><p>Luxury & Budget accommodation available.</p></div></div>
+<div class="col-md-3"><div class="service-box"><i class="fas fa-bus"></i><h4>Comfort Transport</h4><p>Luxury Coaster, Prado & Jeeps.</p></div></div>
+<div class="col-md-3"><div class="service-box"><i class="fas fa-headset"></i><h4>24/7 Support</h4><p>Always available for our travelers.</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="container">
+<h2 class="section-title">About Us</h2>
+<div class="about-content">
+<h3>🌿 Welcome to GB Tours & Travel 🌿</h3>
+<p>Thank you for reaching out. We are delighted to assist you in planning your next unforgettable journey across Pakistan. 🇵🇰</p>
+<p><b>We specialize in:</b></p>
+<ul>
+<li>• By Road & By Air Tours</li>
+<li>• Public Group Tours</li>
+<li>• Family & Honeymoon Packages</li>
+<li>• Corporate, College & University Trips</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- PACKAGES -->
+<section class="package" id="packages">
+<div class="container">
+<h2 class="section-title">Special Packages</h2>
+<div class="about-content mb-5">
+<h3>Are you looking for Blossoms or Honeymoon trip?</h3>
+<p>GB Tours & Travel provides a selection of summer and honeymoon trips for your consideration.</p>
+</div>
+
+<div class="card mb-4">
+<div class="card-body">
+<h3>10 Days Skardu Adventure Tour</h3>
+<span class="price-tag">Solo: 34,000/- PKR</span>
+<span class="price-tag ms-2">Couple: 75,000/- PKR</span>
+<hr>
+<p><b>Day 1</b> Pick up from Skardu Airport - Shangrila, Upper Kachura, Shigar Valley. Night in Skardu</p>
+<p><b>Day 10</b> Drop Skardu Airport</p>
+<a href="https://wa.me/923555414815" target="_blank" class="btn btn-success mt-3">Call / WhatsApp: 03555414815</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- NEW SECTION: POPULAR SPOTS FOR TRIP -->
+<section class="spots-section" id="spots">
+<div class="container">
+<h2 class="section-title">Popular Spots for Trip</h2>
+<p class="text-center mb-5">We cover all major destinations across Gilgit-Baltistan</p>
+
+<div class="spot-region">
+<h4><i class="fas fa-mountain me-2"></i>Skardu Region</h4>
+<div class="spot-tags">
+<span class="spot-tag">Skardu</span><span class="spot-tag">Basho Valley</span><span class="spot-tag">Kachura Valley</span>
+<span class="spot-tag">Upper Kachura Lake</span><span class="spot-tag">Lower Kachura Lake (Shangrila)</span><span class="spot-tag">Manthoka Waterfall</span>
+<span class="spot-tag">Shigar Valley</span><span class="spot-tag">Shigar Fort</span><span class="spot-tag">Sarfaranga Cold Desert</span>
+<span class="spot-tag">Deosai Plains</span><span class="spot-tag">Satpara Lake</span><span class="spot-tag">Katpana Cold Desert</span>
+<span class="spot-tag">Chunda Valley</span><span class="spot-tag">Khaplu</span><span class="spot-tag">Machlu Valley</span>
+<span class="spot-tag">Hushe Valley</span><span class="spot-tag">Marsur Rock</span><span class="spot-tag">Thormik Valley</span>
+<span class="spot-tag">Bilamik Valley</span><span class="spot-tag">Thoursay Meadows</span><span class="spot-tag">Talubrok Valley</span>
+</div>
+</div>
+
+<div class="spot-region">
+<h4><i class="fas fa-mountain me-2"></i>Hunza Region</h4>
+<div class="spot-tags">
+<span class="spot-tag">Hunza</span><span class="spot-tag">Karimabad</span><span class="spot-tag">Altit</span>
+<span class="spot-tag">Baltit</span><span class="spot-tag">Passu Valley</span><span class="spot-tag">Gulmit</span>
+<span class="spot-tag">Gojal Valley</span><span class="spot-tag">Attabad Lake</span><span class="spot-tag">Hussaini Bridge</span>
+<span class="spot-tag">Passu Cones</span><span class="spot-tag">Borith Lake</span><span class="spot-tag">Khunjerab Pass</span>
+<span class="spot-tag">Shimshal Valley</span><span class="spot-tag">Hopper Valley</span><span class="spot-tag">Nagar Valley</span>
+<span class="spot-tag">Rakaposhi View Point</span>
+</div>
+</div>
+
+<div class="spot-region">
+<h4><i class="fas fa-mountain me-2"></i>Gilgit & Nearby</h4>
+<div class="spot-tags">
+<span class="spot-tag">Naltar Valley</span><span class="spot-tag">Naltar Lakes</span><span class="spot-tag">Bagrot Valley</span>
+<span class="spot-tag">Danyor</span><span class="spot-tag">Kargah Valley</span><span class="spot-tag">Kargah Buddha</span>
+<span class="spot-tag">Haramosh Valley</span><span class="spot-tag">Juglot</span><span class="spot-tag">Minapin Valley</span>
+<span class="spot-tag">Rakaposhi Base Camp</span>
+</div>
+</div>
+
+<div class="spot-region">
+<h4><i class="fas fa-mountain me-2"></i>Astore Region</h4>
+<div class="spot-tags">
+<span class="spot-tag">Astore</span><span class="spot-tag">Astore Valley</span><span class="spot-tag">Rama Meadows</span>
+<span class="spot-tag">Rama Lake</span><span class="spot-tag">Minimarg</span><span class="spot-tag">Domel</span>
+<span class="spot-tag">Rupal Valley</span><span class="spot-tag">Tarishing</span><span class="spot-tag">Deosai</span>
+<span class="spot-tag">Sheosar Lake</span>
+</div>
+</div>
+
+<div class="spot-region">
+<h4><i class="fas fa-mountain me-2"></i>Ghizer Region</h4>
+<div class="spot-tags">
+<span class="spot-tag">Ghizer</span><span class="spot-tag">Phander Valley</span><span class="spot-tag">Phander Lake</span>
+<span class="spot-tag">Gupis</span><span class="spot-tag">Yasin Valley</span><span class="spot-tag">Ishkoman Valley</span>
+<span class="spot-tag">Puniyal Valley</span><span class="spot-tag">Khalti Lake</span><span class="spot-tag">Shandur Pass</span>
+<span class="spot-tag">Shandur Lake</span>
+</div>
+</div>
+
+<div class="spot-region">
+<h4><i class="fas fa-mountain me-2"></i>Diamer Region</h4>
+<div class="spot-tags">
+<span class="spot-tag">Diamer</span><span class="spot-tag">Fairy Meadows</span><span class="spot-tag">Nanga Parbat View Point</span>
+<span class="spot-tag">Raikot Bridge</span><span class="spot-tag">Nanga Parbat Base Camp</span><span class="spot-tag">Babusar Pass</span>
+<span class="spot-tag">Lulusar Lake</span><span class="spot-tag">Naran–Babusar Route</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- FLEET / TRANSPORTATION -->
+<section id="fleet" style="background:#fff;">
+<div class="container">
+<h2 class="section-title">Our Fleet - Transportation</h2>
+<p class="text-center mb-5">Comfortable & Safe Vehicles for Your Journey</p>
+<div class="row g-4">
+<div class="col-md-3 col-6"><div class="vehicle-card"><img src="images/transport/coaster.jpg" alt="Luxury Coaster"><h4>Luxury Coaster</h4><p>18-20 Seater | AC | Group Tours</p></div></div>
+<div class="col-md-3 col-6"><div class="vehicle-card"><img src="images/transport/prado (2).jpg" alt="Toyota Prado"><h4>Toyota Prado</h4><p>4x4 | 4 Seater | Family Tours</p></div></div>
+<div class="col-md-3 col-6"><div class="vehicle-card"><img src="images/transport/carr.jpg" alt="Luxury Cars"><h4>Luxury Cars</h4><p>4 Seater | Comfort Ride</p></div></div>
+<div class="col-md-3 col-6"><div class="vehicle-card"><img src="images/transport/jeep.jpg" alt="4x4 Jeep"><h4>4x4 Jeep</h4><p>4 Seater | Deosai & Basho</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<div class="container">
+<h2 class="section-title">Explore Gilgit-Baltistan</h2>
+<p class="text-center mb-5">Famous Tourist Destinations Across Northern Pakistan</p>
+<div class="row g-4">
+
+<!-- SKARDU REGION -->
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/skardu1-1.jpg" alt="Skardu"><div class="gallery-caption">Skardu</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/Basho-Valley.webp" alt="Basho Valley"><div class="gallery-caption">Basho Valley</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/kachura.jpg" alt="Kachura Valley"><div class="gallery-caption">Kachura Valley</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/uper kachura.jpeg" alt="Upper Kachura Lake"><div class="gallery-caption">Upper Kachura Lake</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/lower kachura.jpg" alt="Lower Kachura Lake Shangrila"><div class="gallery-caption">Lower Kachura Lake (Shangrila)</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/manthoka water fall.jpg" alt="Manthoka Waterfall"><div class="gallery-caption">Manthoka Waterfall</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/shiger valley.jpg" alt="Shigar Valley"><div class="gallery-caption">Shigar Valley</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/shiger fort.jpg" alt="Shigar Fort"><div class="gallery-caption">Shigar Fort</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/sarfaranga cold desert.png" alt="Sarfaranga Cold Desert"><div class="gallery-caption">Sarfaranga Cold Desert</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/deosai plains.jpg" alt="Deosai Plains"><div class="gallery-caption">Deosai Plains</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/Satpara-Lake-800x500.webp" alt="Satpara Lake"><div class="gallery-caption">Satpara Lake</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/katpnadesert-colddesertskardu-A-1566296336.webp" alt="Katpana Cold Desert"><div class="gallery-caption">Katpana Cold Desert</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/chunda valley.jpg" alt="Chunda Valley"><div class="gallery-caption">Chunda Valley</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/kapulu.jpg" alt="Khaplu"><div class="gallery-caption">Khaplu</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/Machulu_baltistan.jpg" alt="Machlu Valley"><div class="gallery-caption">Machlu Valley</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/hushe valley.jpg" alt="Hushe Valley"><div class="gallery-caption">Hushe Valley</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/masror rock.jpg" alt="Masror Rock"><div class="gallery-caption">Marsur Rock</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/tormik  valley.jpg" alt="Thormik Valley"><div class="gallery-caption">Thormik Valley</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/bilamik valley.jpg" alt="Bilamik Valley"><div class="gallery-caption">Bilamik Valley</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/thoursay medow.jpg" alt="Thoursay Meadows"><div class="gallery-caption">Thoursay Meadows</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/talubrok.jpg" alt="Talubrok Valley"><div class="gallery-caption">Talubrok Valley</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/heran Bagh bilamik.png" alt="Heran Bagh"><div class="gallery-caption">Heran Bagh</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/Thorsay bilamik.png" alt="Thorsay Bilamik"><div class="gallery-caption">Thorsay Bilamik</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/Heran bagh .png" alt="Heran Bagh"><div class="gallery-caption">Heran Bagh</div></div></div>
+
+<!-- HUNZA REGION -->
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/hunza.jpg" alt="Hunza"><div class="gallery-caption">Hunza</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/karimabad.jpg" alt="Karimabad"><div class="gallery-caption">Karimabad</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/altit.jpg" alt="Altit"><div class="gallery-caption">Altit Fort</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/baltit-fort-Featured.webp" alt="Baltit"><div class="gallery-caption">Baltit Fort</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/passu valley.jpg" alt="Passu Valley"><div class="gallery-caption">Passu Valley</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/gulmit.jpg" alt="Gulmit"><div class="gallery-caption">Gulmit</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/gojal.jpg" alt="Gojal Valley"><div class="gallery-caption">Gojal Valley</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/attabad lake.jpg" alt="Attabad Lake"><div class="gallery-caption">Attabad Lake</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/hussaini bridge.jpg" alt="Hussaini Bridge"><div class="gallery-caption">Hussaini Bridge</div></div></div>
+<div class="col-lg-3 col-md-4 col-6"><div class="gallery-item"><img src="images/passu cones.jpg" alt="Passu Cones"><div class="gallery-caption">Passu Cones</div></div></div>
+
+</div>
+</div>
+</section>
+
+<!-- POPULAR TOURS -->
+<section class="package" id="tours">
+<div class="container">
+<h2 class="section-title">Popular Tours</h2>
+<div class="row g-4">
+<div class="col-lg-4"><div class="card"><img src="images/hunza.jpg"><div class="card-body"><h4>Hunza & Skardu</h4><p>8 Days Premium Tour</p><a href="https://wa.me/923555414815" class="btn btn-success">View Details</a></div></div></div>
+<div class="col-lg-4"><div class="card"><img src="images/deosai.jpg"><div class="card-body"><h4>Deosai & Basho</h4><p>7 Days Adventure</p><a href="https://wa.me/923555414815" class="btn btn-success">View Details</a></div></div></div>
+<div class="col-lg-4"><div class="card"><img src="images/fairy medows.jpg"><div class="card-body"><h4>Fairy Meadows</h4><p>5 Days Tour</p><a href="https://wa.me/923555414815" class="btn btn-success">View Details</a></div></div></div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="container text-center">
+<h2 class="section-title">Contact Us</h2>
+<h3>GB Tours & Travel</h3>
+<p>Skardu | Gilgit Baltistan | Pakistan</p>
+<p><b>Phone:</b> 03555414815 | 03555254753 | 03456025251</p>
+<a href="https://wa.me/923555414815" target="_blank" class="btn btn-main">Chat on WhatsApp</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container text-center">
+<h3>GB Tours & Travel</h3>
+<p>Skardu | Gilgit Baltistan | Pakistan</p>
+<p><b>Phone:</b> 03555414815 | 03555254753 | 03456025251</p>
+<div class="social-icons mb-3">
+<a href="https://www.facebook.com/profile.php?id=100078128265400" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="https://www.instagram.com/gb_tours__travel" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com/@travel_with_3384" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+<p>© 2026 GB Tours & Travel. All Rights Reserved.</p>
+</div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp" href="https://wa.me/923555414815" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
